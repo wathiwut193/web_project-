@@ -1,0 +1,113 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/main.css" type="text/css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Crime News Analysis</title>
+</head>
+<body>
+
+<div align="center" class="nav">
+    <div class="nav-in">
+        <span>Crime News Analysis</span>
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right" id="nav">
+                <li><a href="http://127.0.0.1:5000/index">Home</a></li>
+                <li><a href="http://127.0.0.1:5000/search">Search</a></li>
+                <li><a href="https://github.com/"><i class="fa fa-github" style="font-size:15px"></i> GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<br>
+
+
+<div class="center">
+    <table class="table">
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input class="form-control" type="text" placeholder="Search">
+            </td>
+            <td>
+                <center>
+                    <div class="searchbutton">Search</div>
+                </center>
+            </td>
+            <td>
+                <a href="http://127.0.0.1:5000/advanced_search">
+                    <div class="searchbutton">Advanced search
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+                <input type="radio" name="Searchwithresult"> Search within results<br>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <p style="margin-left:60px;"><b>Search Results</b></p>
+    <table class="currentsearch">
+        <tr>
+            <td class="topic"></td>
+            <td class="topic"><b>CURRENT SEARCH</td>
+            <td class="topic"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <center>- หัวข้อที่ค้นหา
+            </td>
+            <td></td>
+        </tr>
+
+
+    </table>
+</div>
+<div>
+    <table class="newsshow">
+        <tr>
+            <td>Found:</td>
+            <td></td>
+            <td align="center">order by
+                <select>
+                    <option value="datanewest">pud date(newest)</option>
+                    <option value="dataoldest">pud date(oldest)</option>
+                    <option value="titlea-z">Title A-Z, ก-ฮ</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><br>ส่วนที่แสดงข่าวที่พบ</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
